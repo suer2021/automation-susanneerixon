@@ -1,5 +1,7 @@
 /// <reference types="cypress" />
 
+import faker from 'faker'
+
 // This is a test suite
 describe('', function(){
     // This is a test case
@@ -15,12 +17,16 @@ describe('', function(){
         cy.contains('Rooms')
         cy.get('h2 > .btn').click()
         cy.contains('New Room')
-        cy.get(':nth-child(1) > select').type('Double')
-        cy.get(':nth-child(2) > input').type('222')
-        cy.get(':nth-child(3) > input').type('2')
-        cy.get(':nth-child(5) > input').type('1200')
+        cy.get(':nth-child(1) > select').select('Double')
+        let roomNumber = faker.random.number(10000)
+        cy.get(':nth-child(2) > input').type(roomNumber)
+        cy.get(':nth-child(3) > input').type(faker.random.number(4))
+        cy.get('.checkbox').click()
+        cy.get(':nth-child(5) > input').type(faker.random.number({min:250, max:1500}))
+        cy.get(':nth-child(6) > select').select('balcony')
         cy.get('.blue').click()
         cy.contains('Rooms')
+        cy.contains(roomNumber)
         cy.get(':nth-child(3) > .btn').click()
         cy.contains('Tester Hotel Overview')
         cy.get('.user > .btn').click()
