@@ -7,7 +7,7 @@ const passwordTextField = ':nth-child(2) > input'
 const loginButton = '.btn'
 
 // actions / functions
-function checkTitleOfIndexPage(){
+function checkTitleOfIndexPage(cy){
     cy.title().should('eq', titleOfIndexPage)
     cy.contains('Login')
 }
