@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2021-04-23T09:19:58.183Z",
-    "end": "2021-04-23T09:20:07.336Z",
-    "duration": 9153,
+    "start": "2021-04-23T10:23:49.696Z",
+    "end": "2021-04-23T10:23:56.400Z",
+    "duration": 6704,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "679debd2-5771-458c-bf7b-1f4810ca0255",
+      "uuid": "12fc46da-7270-4a1b-a5c9-9344d873305f",
       "title": "",
       "fullFile": "cypress/integration/vrt.spec.js",
       "file": "cypress/integration/vrt.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "2ccfc38f-0c3b-4e4e-bd27-79efdd372242",
+          "uuid": "e948edd0-6492-47cb-8b5c-fa50befaee9f",
           "title": "Test suite",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Navigation test",
               "fullTitle": "Test suite Navigation test",
               "timedOut": null,
-              "duration": 7640,
+              "duration": 5027,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "cy.visit(targets.base_url); //Login\nindexFuncs.checkTitleOfIndexPage(cy);\ncy.percySnapshot('login-page');\nindexFuncs.performValidLogin(cy, targets.username, targets.password, 'Tester Hotel Overview'); // dashboard\ndashboardFuncs.checkTitleOfDashboardPage(cy);\ncy.percySnapshot('dashboard-page'); // rooms page\ndashboardFuncs.navigateToRoomPage(cy, 'Rooms');\nroomsFuncs.checkTitleOfRoomsPage(cy);\ncy.percySnapshot('rooms-page'); // dashboard\nroomsFuncs.navigateToDashboardPage(cy, 'Tester Hotel Overview'); // clients page\ndashboardFuncs.navigateToClientsPage(cy, 'Clients');\nclientsFuncs.checkTitleOfClientsPage(cy);\ncy.percySnapshot('clients-page'); // dashboard\nclientsFuncs.navigateToDashboardPage(cy, 'Tester Hotel Overview'); // bills page\ndashboardFuncs.navigateToBillsPage(cy, 'Bills');\nbillsFuncs.checkTitleOfBillsPage(cy);\ncy.percySnapshot('bills-page'); // dashboard\nbillsFuncs.navigateToDashboardPage(cy, 'Tester Hotel Overview'); // logout\ndashboardFuncs.performLogout(cy, 'Login');",
               "err": {},
-              "uuid": "9d753d8b-31bd-4a59-adc6-6feb3d90a929",
-              "parentUUID": "2ccfc38f-0c3b-4e4e-bd27-79efdd372242",
+              "uuid": "28361569-925e-49c0-a622-fbb2e1bd04f7",
+              "parentUUID": "e948edd0-6492-47cb-8b5c-fa50befaee9f",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "9d753d8b-31bd-4a59-adc6-6feb3d90a929"
+            "28361569-925e-49c0-a622-fbb2e1bd04f7"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 7640,
+          "duration": 5027,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

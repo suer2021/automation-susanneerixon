@@ -9,7 +9,6 @@ import * as newclientFuncs from '../pages/newClientPage'
 import * as billsFuncs from '../pages/billsPage'
 import * as newbillFuncs from '../pages/newBillPage'
 import * as targets from '../targets/targets'
-import faker from 'faker'
 
 describe('Test suite', function(){
 

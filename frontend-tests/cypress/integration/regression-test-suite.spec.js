@@ -2,9 +2,11 @@
 
 import faker from 'faker'
 
-// This is a test suite
+// This is just an example of a test suite, 
+// the real test suite is in regression-page-objects
 describe('', function(){
-    // This is a test case
+    // This is just an example of a test case
+    // the real test cases are in regression-page-objects
     it('Create Room', function(){
         cy.visit('http://localhost:3000')
         cy.title().should('include', 'Hotel')
