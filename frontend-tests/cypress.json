@@ -1,3 +1,4 @@
 {
-    "reporter":"mochawesome"
+    "reporter":"mochawesome",
+    "chromeWebSecurity":false
 }
